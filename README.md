@@ -5,9 +5,9 @@ DC-Motor-Driving-with-Jetson-Nano-
 As you know, Jetson nano has no pins to receive analog signals. So we will put a pca9685 pwm driver board between jetson nano and l298m motor driver. In this way, we will be able to adjust the speed of the motor as if it were an analog signal using Pwm signals.
 
 1) first thing i need is to have a python3 - pip3 :
-'''
+
 $ sudo apt-get install python3-pip
-'''
+
 2) Then you need to download the setuptools package on your jetson nano for a solid installation of the adafruit library
 
 $ pip3 install --upgrade setuptools
