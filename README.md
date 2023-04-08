@@ -21,7 +21,9 @@ $ sudo pip3 install adafruit-circuitpython-servokit==1.3.0
 
 4)It is not easy to drive a dc motor from a servo motor driver called Pca9685, but we can do this by hacking it in coding. In order to work better, first of all, let's download the following codes by adding them to the terminal
 
-$ pip3 insatll pylibi2c $ pip3 insatll pynput
+$ pip3 insatll pylibi2c 
+
+$ pip3 insatll pynput
 
 5) We came to the part of hacking the code. First, let's make the i2c connection:
 i2c = busio.I2C(board.SCL, board.SDA)
@@ -44,6 +46,7 @@ here is the required connections (l298m to pca9685 servo motor driver)
 -  ena pin taken from l298m motor driver - channel 8 on pca9685
 -  ın1 pin taken from l298m motor driver - channel 9 on pca9685
 -  ın2 pin taken from l298m motor driver - channel 10 on pca9685
+ 
 ( The pca9685 pins consist of 16 channels, but when we encode, we will get 15 channels. because we count from 0)
 
 Here are the lines needed to encode these pins in python and convert the required analog signal to pwm signal:
