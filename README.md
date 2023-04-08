@@ -39,6 +39,7 @@ pca.frequency = 1900
 -  Connect gnd pin on pca9685 to gnd pin on jetson nano
 -  Connect sda pin on pca9685 to gnd 3. pin on jetson nano
 -  Connect scl pin on pca9685 to gnd 5.pin on jetson nano
+- Also, do not forget to externally feed the pca9685 with 5 volts and gnd from 2 connectors.
 
 7) The question that most people, especially me, wonder at the beginning: I will connect the ena, ın1 and ın2 pins from the l298m to my jetson. Or the pca9685 card :) I found the answer to this question as a result of trying many times and it was very tiring :)
 here is the required connections (l298m to pca9685 servo motor driver)
