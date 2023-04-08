@@ -33,17 +33,17 @@ what we have to do now is to give the most suitable frequency for the pwm signal
 pca.frequency = 1900
  
 6)required link between jetson nano and pca9685:
->>>  Connect vcc pin on pca9685 to 3.3v pin on jetson nano
->>>  Connect gnd pin on pca9685 to gnd pin on jetson nano
->>>  Connect sda pin on pca9685 to gnd 3. pin on jetson nano
->>>  Connect scl pin on pca9685 to gnd 5.pin on jetson nano
+-  Connect vcc pin on pca9685 to 3.3v pin on jetson nano
+-  Connect gnd pin on pca9685 to gnd pin on jetson nano
+-  Connect sda pin on pca9685 to gnd 3. pin on jetson nano
+-  Connect scl pin on pca9685 to gnd 5.pin on jetson nano
 
 7) The question that most people, especially me, wonder at the beginning: I will connect the ena, ın1 and ın2 pins from the l298m to my jetson. Or the pca9685 card :) I found the answer to this question as a result of trying many times and it was very tiring :)
 here is the required connections (l298m to pca9685 servo motor driver)
 
->>>  ena pin taken from l298m motor driver - channel 8 on pca9685
->>>  ın1 pin taken from l298m motor driver - channel 9 on pca9685
->>>  ın2 pin taken from l298m motor driver - channel 10 on pca9685
+-  ena pin taken from l298m motor driver - channel 8 on pca9685
+-  ın1 pin taken from l298m motor driver - channel 9 on pca9685
+-  ın2 pin taken from l298m motor driver - channel 10 on pca9685
 ( The pca9685 pins consist of 16 channels, but when we encode, we will get 15 channels. because we count from 0)
 
 Here are the lines needed to encode these pins in python and convert the required analog signal to pwm signal:
