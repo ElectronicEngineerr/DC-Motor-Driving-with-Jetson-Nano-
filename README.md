@@ -70,11 +70,11 @@ Now we come to the most important step. As you know, Jetson nano does not have a
 
 some friends will say this: 'was it that easy :)
 
-pwm_channel.duty_cycle = 0xffff
+- pwm_channel.duty_cycle = 0xffff
 Now all you have to do is give the command to the engine and drive the engine.
 
->>> motor1 = motor.DCMotor(channel1, channel2)
->>> motor1.throttle = 0.5
+- motor1 = motor.DCMotor(channel1, channel2)
+- motor1.throttle = 0.5
 
 Fact, I prepared a code for you to control the motor with the keyboard, so you can move the dc motor back and forth with a keyboard library.
 
