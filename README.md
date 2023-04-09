@@ -6,7 +6,7 @@ As you know, Jetson nano has no pins to receive analog signals. So we will put a
 
 1) first thing i need is to have a python3 - pip3 :
 
-$ sudo apt-get install python3-pip
+`$ sudo apt-get install python3-pip`
 
 2) Then you need to download the setuptools package on your jetson nano for a solid installation of the adafruit library
 
