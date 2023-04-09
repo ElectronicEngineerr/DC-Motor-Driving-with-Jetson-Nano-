@@ -41,6 +41,9 @@ here we will set it to 0x40 instead of 0x60 and continue our process.
 what we have to do now is to give the most suitable frequency for the pwm signal of the motor. pca9685 servo motor driver supports 40-1000 Hz frequency. But I chose to use 1600. You can adjust the frequency with the most suitable rotation conditions of your engine by doing the necessary research.
 pca.frequency = 1900
  
+ <img src="https://github.com/ElectronicEngineerr/DC-Motor-Driving-with-Jetson-Nano-/blob/main/Connection.jpg" alt="JETSON NANO" width="400" height="300">
+
+ 
 6)required link between jetson nano and pca9685:
 -  Connect vcc pin on pca9685 to 3.3v pin on jetson nano
 -  Connect gnd pin on pca9685 to gnd pin on jetson nano
@@ -69,7 +72,8 @@ some friends will say this: 'was it that easy :)'
 pwm_channel.duty_cycle = 0xffff
 Now all you have to do is give the command to the engine and drive the engine.
 
-motor1 = motor.DCMotor(channel1, channel2) motor1.throttle = 0.5
+motor1 = motor.DCMotor(channel1, channel2)
+motor1.throttle = 0.5
 
 Fact, I prepared a code for you to control the motor with the keyboard, so you can move the dc motor back and forth with a keyboard library.
 
