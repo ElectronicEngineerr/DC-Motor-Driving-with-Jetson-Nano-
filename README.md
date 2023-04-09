@@ -62,18 +62,19 @@ here is the required connections (l298m to pca9685 servo motor driver)
 
 Here are the lines needed to encode these pins in python and convert the required analog signal to pwm signal:
 
-pwm_channel = pca.channels[8]
-channel1 = pca.channels[10]
-channel2 = pca.channels[9]
+- pwm_channel = pca.channels[8]
+- channel1 = pca.channels[10]
+- channel2 = pca.channels[9]
+
 Now we come to the most important step. As you know, Jetson nano does not have a pin where we can receive any analog signal. I was really shocked when I heard this. but we need to solve this . Required line to convert analog signal to pwm signal:
 
-some friends will say this: 'was it that easy :)'
+some friends will say this: 'was it that easy :)
 
 pwm_channel.duty_cycle = 0xffff
 Now all you have to do is give the command to the engine and drive the engine.
 
-motor1 = motor.DCMotor(channel1, channel2)
-motor1.throttle = 0.5
+>>> motor1 = motor.DCMotor(channel1, channel2)
+>>> motor1.throttle = 0.5
 
 Fact, I prepared a code for you to control the motor with the keyboard, so you can move the dc motor back and forth with a keyboard library.
 
