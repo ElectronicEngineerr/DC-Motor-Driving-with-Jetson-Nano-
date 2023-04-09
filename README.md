@@ -1,4 +1,4 @@
-![JETSON NANO ](https://github.com/ElectronicEngineerr/DC-Motor-Driving-with-Jetson-Nano-/blob/main/jeson%20nano.jpg)
+<img src="https://github.com/ElectronicEngineerr/DC-Motor-Driving-with-Jetson-Nano-/blob/main/jeson%20nano.jpg" alt="JETSON NANO" width="400" height="300">
 
 
 # DC-Motor-Driving-with-Jetson-Nano-
