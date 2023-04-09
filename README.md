@@ -28,9 +28,13 @@ As you know, Jetson nano has no pins to receive analog signals. So we will put a
 
 `$ pip3 insatll pynput `
 
+<img src="https://github.com/ElectronicEngineerr/DC-Motor-Driving-with-Jetson-Nano-/blob/main/pca9685.jpg" alt="JETSON NANO" width="400" height="300">
+
+
 5) We came to the part of hacking the code. First, let's make the i2c connection:
 i2c = busio.I2C(board.SCL, board.SDA)
 here we will set it to 0x40 instead of 0x60 and continue our process.
+
 
 # pca = adafruit_pca9685.PCA9685(i2c, address=0x40)
 
