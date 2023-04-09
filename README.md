@@ -1,7 +1,4 @@
-
-
-
-
+![JETSON NANO ](https://github.com/ElectronicEngineerr/DC-Motor-Driving-with-Jetson-Nano-/blob/main/jeson%20nano.jpg)
 
 
 # DC-Motor-Driving-with-Jetson-Nano-
