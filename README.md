@@ -52,7 +52,7 @@ pca.frequency = 1900
 - Also, do not forget to externally feed the pca9685 with 5 volts and gnd from 2 connectors.
 
 7) The question that most people, especially me, wonder at the beginning: I will connect the ena, ın1 and ın2 pins from the l298m to my jetson. Or the pca9685 card :) I found the answer to this question as a result of trying many times and it was very tiring :)
-here is the required connections (l298m to pca9685 servo motor driver)
+here is the required connections (l298m to pca9685 servo motor driver).
 
 -  ena pin taken from l298m motor driver - channel 8 on pca9685
 -  ın1 pin taken from l298m motor driver - channel 9 on pca9685
@@ -78,4 +78,5 @@ Now all you have to do is give the command to the engine and drive the engine.
 
 Fact, I prepared a code for you to control the motor with the keyboard, so you can move the dc motor back and forth with a keyboard library.
 
-Of course, do not forget to add the libraries of these codes. You can find the necessary codes above.
+Of course, do not forget to add the libraries of these codes. You can find the necessary codes above...
+
